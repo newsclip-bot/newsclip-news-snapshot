@@ -1,0 +1,11 @@
+{
+  "name": "newsclip-news-snapshot",
+  "version": "0.1.0",
+  "description": "Fetch a page and create a hashed snapshot record for diffing later.",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
