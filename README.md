@@ -25,6 +25,11 @@ npm run start -- https://newsclip.com/sports/
 - Best-effort parsing is used to keep dependencies minimal.
 - Designed to be safe to run in CI or cron contexts.
 
+
+## Documentation
+
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-news-snapshot/) for this utility.
+
 ## License
 MIT
 
