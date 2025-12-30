@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 29, 2025 at 07:29 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/9679/live/da953cd0-e49c-11f0-9890-3187c4f9b06f.jpg" alt="Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ceasefire-dispute-erupts-thailand-accuses-cambodia-of-violating-agreement" title="Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement">Ceasefire Dispute Erupts: Thailand Accuses Cambodia of Violating Agreement</a></h3>
+          <p class="article-excerpt">As tensions flare, Thailand&#039;s army claims Cambodia has breached a newly signed ceasefire, casting doubt on diplomatic efforts. What does this mean for affected civilians and regional stability?</p>
+          <div class="article-hashtags">#Thailand #Cambodia #Ceasefire #RegionalSecurity #Diplomacy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/hamas-new-leadership-election.jpg" alt="Hamas Amplifies Terror Control in Gaza, Luring Youth Amid Election Chaos" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/hamas-amplifies-terror-control-in-gaza-luring-youth-amid-election-chaos" title="Hamas Amplifies Terror Control in Gaza, Luring Youth Amid Election Chaos">Hamas Amplifies Terror Control in Gaza, Luring Youth Amid Election Chaos</a></h3>
+          <p class="article-excerpt">As the ceasefire holds, Hamas is seizing the moment to build a new regime in Gaza, recruiting teenagers while facing internal electoral challenges. National security experts warn of the implications of their burgeoning…</p>
+          <div class="article-hashtags">#Hamas #Gaza #YouthRecruitment #MiddleEast #NationalSecurity</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55776.jpg" alt="Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ceasefire-in-jeopardy-thailand-and-cambodia-trade-accusations" title="Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations">Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations</a></h3>
+          <p class="article-excerpt">Tensions flare anew as Thailand accuses Cambodia of breaching their recently signed ceasefire agreement, raising concerns for stability in the region. What does this mean for both nations and their shared borders? Explo…</p>
+          <div class="article-hashtags">#Thailand #Cambodia #Ceasefire #BorderConflict #HumanImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55774.jpg" alt="U.S. Strikes in Venezuela: Unpacking Trump&#039;s Claims on Military Actions" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/us-strikes-in-venezuela-unpacking-trumps-claims-on-military-actions" title="U.S. Strikes in Venezuela: Unpacking Trump&#039;s Claims on Military Actions">U.S. Strikes in Venezuela: Unpacking Trump&#039;s Claims on Military Actions</a></h3>
+          <p class="article-excerpt">In a recent statement, Trump announced that the U.S. targeted a significant facility in Venezuela amid ongoing operations against alleged drug trafficking. This raises critical questions about the motivations and implic…</p>
+          <div class="article-hashtags">#Venezuela #USMilitary #ForeignPolicy #DrugTrafficking #Trump #LatinAmerica</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/AP25346012791087.jpg?w=1200crop=1" alt="Limited Transparency: Court Releases Redacted Transcript in Kirk Murder Case" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/limited-transparency-court-releases-redacted-transcript-in-kirk-murder-case" title="Limited Transparency: Court Releases Redacted Transcript in Kirk Murder Case">Limited Transparency: Court Releases Redacted Transcript in Kirk Murder Case</a></h3>
+          <p class="article-excerpt">A Utah judge has ordered the release of a redacted transcript from hearings related to the murder case of Charlie Kirk, despite attempts by the defense to keep details confidential. This development highlights ongoing t…</p>
+          <div class="article-hashtags">#CharlieKirk #TylerRobinson #JusticeSystem #PublicTransparency #MediaFreedom</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55316.jpg" alt="Saying Goodbye: Reflecting on a Year of Division" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/saying-goodbye-reflecting-on-a-year-of-division" title="Saying Goodbye: Reflecting on a Year of Division">Saying Goodbye: Reflecting on a Year of Division</a></h3>
+          <p class="article-excerpt">As we close the chapter on a year fraught with polarizing moments, it&#039;s time to reflect on what lessons we&#039;ve learned. Join me in unpacking the complexities that shaped our discourse and consider how we can mend the div…</p>
+          <div class="article-hashtags">#YearInReview #CivicEngagement #SocialDiscourse #Unity #CivicDialogue</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/07/birthright-citizenship-protester.jpg" alt="Birthright Citizenship: A Misinterpretation of the 14th Amendment" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/birthright-citizenship-a-misinterpretation-of-the-14th-amendment" title="Birthright Citizenship: A Misinterpretation of the 14th Amendment">Birthright Citizenship: A Misinterpretation of the 14th Amendment</a></h3>
+          <p class="article-excerpt">Legal scholars Amy Swearer and Hans von Spakovsky assert that birthright citizenship is often misunderstood. They emphasize that the 14th Amendment&#039;s language, particularly the jurisdiction clause, does not extend citiz…</p>
+          <div class="article-hashtags">#BirthrightCitizenship #14thAmendment #ImmigrationDebate #LegalScholarship #CivicResponsibility</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/d730d71f20bc92c185557591741c9998ce87b5a2/0_13_8566_6853/master/8566.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=10c96974b0ac764df429526f7ae8ec86" alt="Unearthing the Complexities of Trump and Zelenskyy&#039;s Peace Talks" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unearthing-the-complexities-of-trump-and-zelenskyys-peace-talks" title="Unearthing the Complexities of Trump and Zelenskyy&#039;s Peace Talks">Unearthing the Complexities of Trump and Zelenskyy&#039;s Peace Talks</a></h3>
+          <p class="article-excerpt">In a world overshadowed by geopolitical tensions, the cartoon by Ella Baron encapsulates the intricate dynamics of peace negotiations between Trump and Zelenskyy. I delve into the underlying issues that shape these disc…</p>
+          <div class="article-hashtags">#Ukraine #Trump #Zelenskyy #PeaceTalks #PoliticalCartoons</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55326.jpg" alt="Selling the Potter Valley Dams: A Federal Responsibility" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/selling-the-potter-valley-dams-a-federal-responsibility" title="Selling the Potter Valley Dams: A Federal Responsibility">Selling the Potter Valley Dams: A Federal Responsibility</a></h3>
+          <p class="article-excerpt">The debate surrounding the Potter Valley dams has intensified. If federal authorities are intent on acquiring them, they must take on the responsibilities of ownership. It&#039;s time for a thoughtful, transparent discussion…</p>
+          <div class="article-hashtags">#PotterValleyDams #WaterManagement #EnvironmentalStewardship #FederalResponsibility #Sustainability</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/de7973fec9f94761d46befe6822a4c95985d6086/764_0_5000_4000/master/5000.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=68b5d9c87b2941115fc1146ca1d8c3b9" alt="Keir Starmer&#039;s Labour: Between Accomplishments and Accountability" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/keir-starmers-labour-between-accomplishments-and-accountability" title="Keir Starmer&#039;s Labour: Between Accomplishments and Accountability">Keir Starmer&#039;s Labour: Between Accomplishments and Accountability</a></h3>
+          <p class="article-excerpt">As Polly Toynbee highlights Labour&#039;s successes, the underlying complexities reveal a deeper narrative of discord within the party. Keir Starmer must face the discontent and listen to dissent if he hopes to lead effectiv…</p>
+          <div class="article-hashtags">#LabourLeadership #KeirStarmer #PoliticalAccountability #Elections2025 #CivicEngagement</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2250771690.jpg?w=1200crop=1" alt="Jeremiah Smith Reflects on Miami: A Surprising Confession Ahead of the Cotton Bowl" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jeremiah-smith-reflects-on-miami-a-surprising-confession-ahead-of-the-cotton-bowl" title="Jeremiah Smith Reflects on Miami: A Surprising Confession Ahead of the Cotton Bowl">Jeremiah Smith Reflects on Miami: A Surprising Confession Ahead of the Cotton Bowl</a></h3>
+          <p class="article-excerpt">In an unexpected twist, Ohio State&#039;s Jeremiah Smith confesses he might have chosen Miami over the Buckeyes during his recruitment, igniting reactions from fans ahead of the Cotton Bowl showdown.</p>
+          <div class="article-hashtags">#CottonBowl #JeremiahSmith #OhioState #MiamiHurricanes #CollegeFootball</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://s.yimg.com/ny/api/res/1.2/3I9RP78zSX3N6d1zUWhoWw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/marquee_sports_network_article_995/aa31b66f08afa66af2948fbead42f121" alt="Bears Stock Watch: Key Players Rise and Fall in Heartbreaking Loss to 49ers" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/bears-stock-watch-key-players-rise-and-fall-in-heartbreaking-loss-to-49ers" title="Bears Stock Watch: Key Players Rise and Fall in Heartbreaking Loss to 49ers">Bears Stock Watch: Key Players Rise and Fall in Heartbreaking Loss to 49ers</a></h3>
+          <p class="article-excerpt">In a thrilling Week 17 showdown, the Bears battled the 49ers but came up short. Join me as I dive into five players whose performances saw a rise or fall amidst the dramatic 42-38 defeat, revealing the heart and tactics…</p>
+          <div class="article-hashtags">#ChicagoBears #NFL #BearsStockWatch #SportsAnalysis #FootballFrenzy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.zenfs.com/en/the_sporting_news_articles_584/f3c08e2abd4612d7bfb44e5bcbcc2c09" alt="49ers Surge: How Their Win Over Bears Shapes the NFC West Playoff Race" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/49ers-surge-how-their-win-over-bears-shapes-the-nfc-west-playoff-race" title="49ers Surge: How Their Win Over Bears Shapes the NFC West Playoff Race">49ers Surge: How Their Win Over Bears Shapes the NFC West Playoff Race</a></h3>
+          <p class="article-excerpt">With Brock Purdy leading the charge, the San Francisco 49ers clinched a thrilling 42-38 victory against the Bears. This triumph sets the stage for an epic showdown with the Seahawks that could determine the path to the…</p>
+          <div class="article-hashtags">#49ers #NFCWest #NFLPlayoffs #BrockPurdy #Seahawks</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55608.jpg" alt="Eagles Stay in the Hunt for No. 2 Seed After Thrilling 49ers Victory" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/eagles-stay-in-the-hunt-for-no-2-seed-after-thrilling-49ers-victory" title="Eagles Stay in the Hunt for No. 2 Seed After Thrilling 49ers Victory">Eagles Stay in the Hunt for No. 2 Seed After Thrilling 49ers Victory</a></h3>
+          <p class="article-excerpt">The Philadelphia Eagles have kept their playoff dreams alive, thanks to a dramatic win by the 49ers over the Bears. In this feature, we dissect how this twist impacts the Eagles&#039; quest for a crucial No. 2 seed in the NF…</p>
+          <div class="article-hashtags">#Eagles #NFLPlayoffs #FootballFever #49ersVictory #SportsAnalysis</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2241299110.jpg?w=1600&amp;quality=80&amp;webp=1" alt="Mets Look for Outfield Depth: Is Garrett Mitchell the Answer?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/mets-look-for-outfield-depth-is-garrett-mitchell-the-answer" title="Mets Look for Outfield Depth: Is Garrett Mitchell the Answer?">Mets Look for Outfield Depth: Is Garrett Mitchell the Answer?</a></h3>
+          <p class="article-excerpt">As the Mets pivot from their pursuit of Cody Bellinger, they set their sights on Brewers outfielder Garrett Mitchell. Can this five-tool player be the transformative addition New York needs?</p>
+          <div class="article-hashtags">#NewYorkMets #GarrettMitchell #MLBTrade #OutfieldUpgrade #BaseballNews</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/29/multimedia/29cul-anime-essay-vqlc/29cul-anime-essay-vqlc-facebookJumbo.jpg" alt="In 2025, Anime Became a Global Phenomenon" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/in-2025-anime-became-a-global-phenomenon" title="In 2025, Anime Became a Global Phenomenon">In 2025, Anime Became a Global Phenomenon</a></h3>
+          <p class="article-excerpt">2025 was a pivotal year for anime, showcasing its evolution from niche interest to global dominance. With blockbuster hits providing richer narratives and cultural resonance, the medium has undeniably found its rightful…</p>
+          <div class="article-hashtags">#Anime2025 #GlobalEntertainment #KPopDemonHunters #CulturalCritique #DemonSlayer #NeZhaII</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55689.jpg" alt="Exploring the Cream of the Crop: Top Franchise Opportunities for 2026" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/exploring-the-cream-of-the-crop-top-franchise-opportunities-for-2026" title="Exploring the Cream of the Crop: Top Franchise Opportunities for 2026">Exploring the Cream of the Crop: Top Franchise Opportunities for 2026</a></h3>
+          <p class="article-excerpt">As we step into 2026, the franchise landscape is teeming with fresh opportunities in retail and entertainment. Join me as I unravel the top 15 franchises set to thrive and reshape our experiences in the coming year.</p>
+          <div class="article-hashtags">#Franchising #RetailTrends #Entertainment #BusinessOpportunities #Sustainability</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55989.jpg" alt="Turbulence in Tinseltown: A 2025 Layoff Reckoning" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/turbulence-in-tinseltown-a-2025-layoff-reckoning" title="Turbulence in Tinseltown: A 2025 Layoff Reckoning">Turbulence in Tinseltown: A 2025 Layoff Reckoning</a></h3>
+          <p class="article-excerpt">As the entertainment industry reels from an alarming 18% rise in layoffs, with over 17,000 jobs lost in 2025, it&#039;s time to delve into what this means for creativity, culture, and the future of storytelling.</p>
+          <div class="article-hashtags">#Entertainment #MediaLayoffs #CreativeIndustry #FilmProduction #CulturalImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/nick-reiner-diddy-celeb-court.jpg" alt="When Celebrity Dreams Turn to Nightmares: The 2025 Trials of Nick Reiner and Diddy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/when-celebrity-dreams-turn-to-nightmares-the-2025-trials-of-nick-reiner-and-diddy" title="When Celebrity Dreams Turn to Nightmares: The 2025 Trials of Nick Reiner and Diddy">When Celebrity Dreams Turn to Nightmares: The 2025 Trials of Nick Reiner and Diddy</a></h3>
+          <p class="article-excerpt">2025 shook the entertainment world with jaw-dropping legal battles, including Nick Reiner charged with murdering his parents and Sean &#039;Diddy&#039; Combs&#039; prison sentence. Dive into the dark side of fame that has caught these…</p>
+          <div class="article-hashtags">#CelebrityNews #InCourt #Diddy #NickReiner #EntertainmentDrama</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/jennifer-aniston-beaming.jpg" alt="Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jennifer-anistons-joyful-holiday-moments-with-jim-curtis" title="Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis">Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis</a></h3>
+          <p class="article-excerpt">Celebrity fans got a rare glimpse into Jennifer Aniston&#039;s festive moments with boyfriend Jim Curtis as she shared enchanting Christmas photos on Instagram, celebrating their first holiday season together. Discover the m…</p>
+          <div class="article-hashtags">#JenniferAniston #JimCurtis #CelebrityCouples #HolidayJoy #InstagramMoment</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56031.jpg" alt="Unpacking MAGA&#039;s Disappointment for Small Businesses" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unpacking-magas-disappointment-for-small-businesses" title="Unpacking MAGA&#039;s Disappointment for Small Businesses">Unpacking MAGA&#039;s Disappointment for Small Businesses</a></h3>
+          <p class="article-excerpt">In a recent analysis, Paul Krugman discusses the overlooked impact of MAGA policies on small businesses. As a vital part of the economy, their struggles deserve our attention now more than ever.</p>
+          <div class="article-hashtags">#SmallBusiness #EconomicPolicy #MAGA #PaulKrugman #LocalEconomy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/26/business/00uber-monitoring/00uber-monitoring-facebookJumbo.jpg" alt="Uber Faces Growing Concerns Over Safety as Drivers with Complaints Remain Active" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/uber-faces-growing-concerns-over-safety-as-drivers-with-complaints-remain-active" title="Uber Faces Growing Concerns Over Safety as Drivers with Complaints Remain Active">Uber Faces Growing Concerns Over Safety as Drivers with Complaints Remain Active</a></h3>
+          <p class="article-excerpt">Despite a troubling history of complaints against drivers, Uber continues allowing individuals with serious allegations to remain on the road, raising significant safety concerns for passengers. An in-depth investigatio…</p>
+          <div class="article-hashtags">#UberSafety #RideHailing #SexualAssaultAwareness #PublicSafety #BusinessEthics</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/28/multimedia/28xp-gmail1-lhbw/28xp-gmail1-lhbw-facebookJumbo.jpg" alt="Gmail&#039;s Game-Changer: Change Your Address Without Losing Data" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/gmails-game-changer-change-your-address-without-losing-data" title="Gmail&#039;s Game-Changer: Change Your Address Without Losing Data">Gmail&#039;s Game-Changer: Change Your Address Without Losing Data</a></h3>
+          <p class="article-excerpt">In a significant shift, Google is allowing Gmail users to change their email addresses while retaining their data. This move, gradually rolling out, ensures old addresses remain active and secure, promising seamless tra…</p>
+          <div class="article-hashtags">#Gmail #GoogleNews #TechUpdates #UserExperience #EmailServices</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56028.jpg" alt="Small Business Owners&#039; Cautious Optimism: Navigating 2026&#039;s Turbulent Waters" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/small-business-owners-cautious-optimism-navigating-2026s-turbulent-waters" title="Small Business Owners&#039; Cautious Optimism: Navigating 2026&#039;s Turbulent Waters">Small Business Owners&#039; Cautious Optimism: Navigating 2026&#039;s Turbulent Waters</a></h3>
+          <p class="article-excerpt">As small business owners look towards 2026, they embody a cautious optimism despite rising costs and labor challenges. Explore the nuanced landscape they navigate and how current economic shifts affect their outlook.</p>
+          <div class="article-hashtags">#SmallBusiness #EconomicOutlook #LaborMarket #BusinessGrowth #Resilience</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55711.jpg" alt="Clifton Small Businesses Reeling from Weekend Break-Ins" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/clifton-small-businesses-reeling-from-weekend-break-ins" title="Clifton Small Businesses Reeling from Weekend Break-Ins">Clifton Small Businesses Reeling from Weekend Break-Ins</a></h3>
+          <p class="article-excerpt">In a troubling wake-up call, Clifton small business owners faced a series of break-ins on Saturday morning. The ripple effects of this crime extend far beyond property damage, threatening the very fabric of our communit…</p>
+          <div class="article-hashtags">#CliftonBusiness #CommunitySafety #LocalEconomy #SupportSmallBusiness #CrimePrevention</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
